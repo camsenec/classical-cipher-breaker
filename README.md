@@ -128,6 +128,7 @@ the number of keys m is 4
 
 Based on the results, we solve the following equation. 
 
+![IMG_3437 3](https://user-images.githubusercontent.com/27656483/95873778-e5f1d580-0d78-11eb-87f3-efbc119e32e6.JPG)
 
 Now, the obtained answer is z_1, z_2 = z_1 + 4, z_3 = z_1 + 12, z_4 = z_1 + 11
 
