@@ -116,7 +116,7 @@ class VigenereSolver(object):
     def __decrypt(self):
         m = self.__extractPartialTexts()
         pairOfShiftKeys = self.__findDifferenceOfKeys(m)
-        return pairOfShiftKeys
+        return m, pairOfShiftKeys
 
     def run(self):
         return self.__decrypt()

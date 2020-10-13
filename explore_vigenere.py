@@ -9,7 +9,7 @@ if __name__ == "__main__":
         message = f.read()
 
     differenceDict = {}
-    with open("input/explorer_vigenere_input.csv", mode="r") as f:
+    with open("input/explore_vigenere_input.csv", mode="r") as f:
         reader = csv.reader(f)
         for row in reader:
             differenceDict[int(row[0])-1] = int(row[1])

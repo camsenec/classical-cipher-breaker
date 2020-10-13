@@ -25,6 +25,7 @@ if __name__=='__main__':
         #Vigenere
         f.write('\nVigenere\n')
         f.write('-----------------------------------------------------------\n')
-        pairOfShiftKeys = vigenere.VigenereSolver(message).run()
+        m, pairOfShiftKeys = vigenere.VigenereSolver(message).run()
+        f.write("the number of keys m is " + str(m) + '\n')
         f.write(str(pairOfShiftKeys) + '\n')
         f.write('============> Calculate Manually!!')
