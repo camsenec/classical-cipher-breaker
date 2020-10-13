@@ -10,20 +10,20 @@ In decryption of message encrypted by vigenere cipher, we use I.C. (Index of Coi
 Note : You can also excecute this program at https://repl.it/@thanatoth/classical-cipher-breaker. Please fork the project and use it (If you does not have an account of repl.it please create your account). 
 Here, you need not construct virtual environment. For execution, remove `pipenv run` from any instructions shown below. For example, if you want to run main.py, what you have to do is excecute `python main.py` at the terminal shown on the left side of this page. 
 
-1. Clone this repository
+####  1. Clone this repository
 ```bash
 $ git clone https://github.com/thanatoth/classical-cipher-breaker.git
 $ cd classical-cipher-breake
 ```
 
-2. Construct virtual environment
+#### 2. Construct virtual environment
 ```bash
 $ pipenv install
 ```
 
-3. Copy and Paste a cryptogram you want to decrypt to `input/cryptogram.txt`.
+#### 3. Copy and Paste a cryptogram you want to decrypt to `input/cryptogram.txt`.
 
-4. Execute `main.py`
+#### 4. Execute `main.py`
 ```bash
 $ pipenv run python main.py
 ```
@@ -66,7 +66,7 @@ Each [i, j, g, IC] means when the difference between two keys a, b are g, the va
 Each element is ordered from the one whose g is closest to 0.65.
 Choose sufficient number of the elements to solve equation and calculate the difference of each key from z_1.
 
-5. [In case the cryptgram may be encrypted by vigenere] Input your calculated results in `input/explorer_vigenere_input.csv`
+#### 5. [In case the cryptgram may be encrypted by vigenere] Input your calculated results in `input/explorer_vigenere_input.csv`
 Based on your calculated results: z_1, z_2 = z_1 + d_2, z_3 = z_1 + d_3, z_4 = z_1 + d_4, ... , z_k = z_1 + d_n, please input each value as the following. 
 ```
 1,0
@@ -79,12 +79,12 @@ k,d_n
 
 ```
 
-6. [In case the cryptgram may be encrypted by vigenere] Excecute `explore_vigenere.py`
+#### 6. [In case the cryptgram may be encrypted by vigenere] Excecute `explore_vigenere.py`
 ```bash
 $ pipenv run python explore_vigenere.py
 ```
 
-7. [In case the cryptgram may be encrypted by vigenere] Excecute `explore_vigenere.py`
+#### 7. [In case the cryptgram may be encrypted by vigenere] Excecute `explore_vigenere.py`
 After excecution, you can see the result of decryption at `output/vigenere_result.txt`
 The number from 0 to 25 represents the value of z_1.
 
@@ -104,12 +104,12 @@ XHWLISAMYALBSNKTWRWVELDXHBQIPALHENVTWVAOMDDRECLXHUHHRBQVSRLXDHSOIAUHQMGGENVBRTWK
 ```
 
 We will show you each step from step 3 to decrypt cryptogram shown above. 
-[Step 3] Copy and Paste a cryptogram you want to decrypt to `input/cryptogram.txt`. 
+#### [Step 3] Copy and Paste a cryptogram you want to decrypt to `input/cryptogram.txt`. 
 ```
 XHWLISAMYALBSNKTWRWVELDXHBQIPALHENVTWVAOMDDRECLXHUHHRBQVSRLXDHSOIAUHQMGGENVBRTWKISLBRGMGHEJECIFZPOYBGNGMMCWMLALMLEKHPDAXVSSKINGMQOLBZALXHTGKITJXETBNWTGKIVWGQAAGPYTRXHWBVRSMMOFTPAKLISKFINLHJTZXHAFZIRKHJBSMXLWTRDTRXHWBVSWEJIFMIRWLXRSMLEJMLEQWMSUHZEJTWOMGHRWTWOFMSRMGEWSRFYJXELASMNYMLALPLALBXMSDISKXRSWYSRLAIMLHHOVXTEFWWOFPLALBXWAEPMSDISWGWEXHVOLAIRKMSDGTRDLAETSEPOXMLEGMLEJLGAFGSTAVITZBWTGHIVWGEQMBXETKEVWLSLVBIRETCPJXJEJMSRMGVALAIRLAENZXVOAVELDRFULISIFMPEKLPYVBITJRMNYMSSLXQTZXSNUHQIFZXIVXELDUCHAFWEDYXHMLAEUHYLVBQAYBREOBXHGNXCGGXRSWMCLBSNSVMRUNQSLTRCWBRWZBGHSGERERELDHJWZHWEEXQBWKWAJXFRSOIFDXISSMXOHLTEWWFEXHVELAIEFXQYETOEKTQONXMFLAISGEHIWKWRWTPLQTVETKEVWMLEFMLIKLYRWECIKGXTZXSULVSMWTRYGYXHWFAAFMIDWTGHOHYLVAEVWIVEXXVRWWXHSMELDLXAFWENVYMGZMAHSMAEZTZEZXVELAINALECSLIIFPLIUAXHWBRTWKECLBSNGYQAFRMNVBZIVNELDRVALBSNSEHEUBWIGGQACBRGHKSCWLWEKHREHKSCWLWPWKWODWMEJIVOVNGEKTROMMGOEXMNLXRDWWFYFHSNWFSSLTVMAXWTJRXOSOSIVMLIKIVOTEIMBNWTSLGOJMIZVBHSAGGELAIYUTRTMLYADECMSDIRWMVESMTHQLMCSEPYAFTOKLMBDXXHWRQACXMTWVSNGFMCSEPYAFTOKLMBDXXHWRWHGHXDWLIRLXVSLAINKMENVBRGSGHFAZLTAGKIKXECZLSLVBIRKBRDAOMDMTPLQKETAHRADVSUJLIOXTGTAHRAXMIRSEPBWVEUKXXHWVSSLHJRMGRIFZMSKNVELHFESMPESLXAKAMGZTWTZXGOKMSFKMEYAGK
 ```
 
-[Step 4] Execute `main.py`
+#### [Step 4] Execute `main.py`
 ```bash
 $ pipenv run python main.py
 ```
@@ -119,7 +119,7 @@ In this case, the output from vigenere-solver is as follows.
 
 
 
-5. [In case the cryptgram may be encrypted by vigenere] Input your calculated results in `input/explorer_vigenere_input.csv`
+#### [Step 5] [In case the cryptgram may be encrypted by vigenere] Input your calculated results in `input/explorer_vigenere_input.csv`
 
 
 
