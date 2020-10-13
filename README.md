@@ -3,9 +3,8 @@ This program try to decrypt cryptogram encrypted by classical way, namely shift 
 In decryption of message encrypted by vigenere cipher, we use I.C. (Index of Coincidence) and Mutual I.C.
 
 ## Requirements
-```
-Python 3.7
-```
+- Python 3.7
+
 
 ## Usage
 Note : You can also excecute this program at https://repl.it/@thanatoth/classical-cipher-breaker. Please fork the project and use it (If you does not have an account of repl.it please create your account). 
