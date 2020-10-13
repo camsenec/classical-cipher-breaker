@@ -1,7 +1,4 @@
 from decrypt import constants, shift, substitute, vigenere
-import shift
-import substitute
-import vigenere
 
 import sys
 sys.dont_write_bytecode = True

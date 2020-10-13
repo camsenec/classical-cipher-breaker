@@ -1,4 +1,4 @@
-import constants
+from decrypt import constants
 
 class ShiftSolver(object):
     def __init__(self, message, offset):

@@ -1,6 +1,6 @@
 from string import ascii_lowercase
 from decrypt import shift
-import constants
+from decrypt import constants
 
 
 class VigenereSolver(object):
