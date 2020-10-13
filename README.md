@@ -2,6 +2,11 @@
 This program try to decrypt cryptogram encrypted by classical way, namely shift cipher, substition cipher, and vigenere cipher. 
 In decryption of message encrypted by vigenere cipher, we use I.C. (Index of Coincidence) and Mutual I.C.
 
+## Requirements
+```
+Python 3.7
+```
+
 ## Usage
 Note : You can also excecute this program at https://repl.it/@thanatoth/classical-cipher-breaker. Please fork the project and use it (If you does not have an account of repl.it please create your account). 
 Here, you need not construct virtual environment. Remove `pipenv run` from any instructions shown below. For example, if you want to run main.py, what you have to do is excecute `python main.py` at the terminal shown on the left side of this page. 
