@@ -81,7 +81,7 @@ k,d_n
 
 6. [In case the cryptgram may be encrypted by vigenere] Excecute `explore_vigenere.py`
 ```bash
-$ python explore_vigenere.py
+$ pipenv run python explore_vigenere.py
 ```
 
 7. [In case the cryptgram may be encrypted by vigenere] Excecute `explore_vigenere.py`
