@@ -1,5 +1,5 @@
 from string import ascii_lowercase
-import shift
+from decrypt import shift
 import constants
 
 
@@ -94,18 +94,18 @@ class VigenereSolver(object):
         for indexI in sequenceDictionary.keys():
             for indexJ in sequenceDictionary.keys():
                 for g in range(len(constants.alphabet)):
-                    candidateG = self.__calculateMuturalIC(sequenceDictionary[indexI], shift.ShiftSolver(sequenceDictionary[indexJ], g).run())
-                    candidatePairList.append([indexI+1, indexJ+1, candidateG])
+                    mutualIC = self.__calculateMuturalIC(sequenceDictionary[indexI], shift.ShiftSolver(sequenceDictionary[indexJ], g).run())
+                    candidatePairList.append([indexI+1, indexJ+1, g, mutualIC])
 
         epsilon = 0.0005
         pairOfShiftKeys = []
         while True:
             pairOfShiftKeys.clear()
             for candidatePair in candidatePairList:
-                if candidatePair[2] <= 0.065+epsilon and candidatePair[2] >= 0.065-epsilon:
+                if candidatePair[3] <= 0.065+epsilon and candidatePair[3] >= 0.065-epsilon:
                     pairOfShiftKeys.append(candidatePair)
 
-            if len(pairOfShiftKeys) >= lengthOfKey:
+            if len(pairOfShiftKeys) >= lengthOfKey*2:
                 break
 
             epsilon += 0.0005
