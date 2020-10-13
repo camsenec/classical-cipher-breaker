@@ -64,7 +64,7 @@ Vigenere
 
 Each [i, j, g, IC] means when the difference between two keys a, b are g, the value of the Mutural I.C is IC. 
 Each element is ordered from the one whose g is closest to 0.65.
-Choose some of the elements and calculate the difference of each key from $z_1$.
+Choose some of the elements and calculate the difference of each key from z_1.
 
 5. [In case the cryptgram may be encrypted by vigenere] Input your calculated results in `input/explorer_vigenere_input.csv`
 Based on your calculated results: z_1, z_2 = z_1 + d_2, z_3 = z_1 + d_3, z_4 = z_1 + d_4, ... , z_k = z_1 + d_n, please input each value as the following. 
@@ -96,6 +96,8 @@ The number from 0 to 25 represents the value of z_1.
 :
 :
 ```
+
+
 
 
 
