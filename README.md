@@ -83,6 +83,7 @@ k,d_n
 ```bash
 $ pipenv run python explore_vigenere.py
 ```
+When you excecute on repl.it, please install wordninja by `$ pip install wordninja`
 
 After excecution, you can see the result of decryption at `output/vigenere_result.txt`
 The number from 0 to 25 represents the value of z_1.
