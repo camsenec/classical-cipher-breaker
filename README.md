@@ -3,6 +3,7 @@ This program try to decrypt cryptogram encrypted by classical way, namely shift 
 In decryption of message encrypted by vigenere cipher, we use I.C. (Index of Coincidence) and Mutual I.C.
 
 ## Usage
+Note : You can also excecute this program at https://repl.it/@thanatoth/classical-cipher-breaker
 1. Clone this repository
 ```bash
 $ git clone https://github.com/thanatoth/classical-cipher-breaker.git
