@@ -116,7 +116,7 @@ XHWLISAMYALBSNKTWRWVELDXHBQIPALHENVTWVAOMDDRECLXHUHHRBQVSRLXDHSOIAUHQMGGENVBRTWK
 ```bash
 $ pipenv run python main.py
 ```
-After this step we cannot fine any meaningful sentences in `output/result.txt`.
+After this step we cannot find any meaningful sentences in `output/result.txt`.
 Then, we choose sufficient number of the elements to solve equation and calculate the difference of each key from z_1.
 In this case, the output from vigenere-solver is as follows.
 ```
