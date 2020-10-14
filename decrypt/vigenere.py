@@ -116,7 +116,7 @@ class VigenereSolver(object):
                 if candidatePair[3] <= 0.065+epsilon and candidatePair[3] >= 0.065-epsilon:
                     pairOfShiftKeys.append(candidatePair)
 
-            if len(pairOfShiftKeys) >= lengthOfKey*2:
+            if len(pairOfShiftKeys) >= lengthOfKey:
                 break
 
             epsilon += 0.0005
