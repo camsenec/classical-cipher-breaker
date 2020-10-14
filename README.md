@@ -137,9 +137,9 @@ Now, the obtained answer is z_1, z_2 = z_1 + 4, z_3 = z_1 + 12, z_4 = z_1 + 11
 #### [Step 5] [In case the cryptgram may be encrypted by vigenere] Input your calculated results in `input/explorer_vigenere_input.csv`
 ```
 1,0
-2,4
-3,12
-4,11
+2,22
+3,14
+4,15
 ```
 
 #### [Step 6] [In case the cryptgram may be encrypted by vigenere] Excecute `explore_vigenere.py`
