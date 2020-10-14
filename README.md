@@ -1,5 +1,5 @@
 # classical-cipher-breaker
-This program try to decrypt cryptogram encrypted by classical way, namely shift cipher, substition cipher, and vigenere cipher. 
+This cipher breaker tries to decrypt cryptogram encrypted by classical way, namely shift cipher, substition cipher, and vigenere cipher. 
 In decryption of message encrypted by vigenere cipher, we use I.C. (Index of Coincidence) and Mutual I.C.
 
 ## Requirements
@@ -83,6 +83,7 @@ k,d_n
 ```bash
 $ pipenv run python explore_vigenere.py
 ```
+When you excecute on repl.it, please install wordninja by `$ pip install wordninja`
 
 After excecution, you can see the result of decryption at `output/vigenere_result.txt`
 The number from 0 to 25 represents the value of z_1.
@@ -115,7 +116,7 @@ XHWLISAMYALBSNKTWRWVELDXHBQIPALHENVTWVAOMDDRECLXHUHHRBQVSRLXDHSOIAUHQMGGENVBRTWK
 ```bash
 $ pipenv run python main.py
 ```
-After this step we cannot fine any meaningful sentences in `output/result.txt`.
+After this step we cannot find any meaningful sentences in `output/result.txt`.
 Then, we choose sufficient number of the elements to solve equation and calculate the difference of each key from z_1.
 In this case, the output from vigenere-solver is as follows.
 ```
