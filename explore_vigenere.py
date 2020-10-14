@@ -24,3 +24,6 @@ if __name__ == "__main__":
             for key in offsetDict:
                 encryptionKey.append(constants.alphabet[offsetDict[key]])
             f.write(str(encryptionKey) + ' : ' + vigenere_second.VigenereProcessor(message, offsetDict).run() + '\n\n')
+
+    print("\nThe result is saved to 'output/vigenere_result.txt'")
+    print("[Details] https://github.com/thanatoth/classical-cipher-breaker/blob/master/README.md#classical-cipher-breaker")

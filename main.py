@@ -29,3 +29,6 @@ if __name__=='__main__':
         f.write("the number of keys m is " + str(m) + '\n')
         f.write(str(pairOfShiftKeys) + '\n')
         f.write('============> Calculate Manually!!')
+        print("\nThe result is saved to 'output/result.txt'")
+        print("After calculation and input to 'explore_vigenere_input.csv', excecute 'python explore_vigenere.py'")
+        print("[Details] https://github.com/thanatoth/classical-cipher-breaker/blob/master/README.md#classical-cipher-breaker")
