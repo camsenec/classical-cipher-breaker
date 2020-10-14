@@ -1,5 +1,5 @@
 # classical-cipher-breaker
-This program try to decrypt cryptogram encrypted by classical way, namely shift cipher, substition cipher, and vigenere cipher. 
+This cipher breaker tries to decrypt cryptogram encrypted by classical way, namely shift cipher, substition cipher, and vigenere cipher. 
 In decryption of message encrypted by vigenere cipher, we use I.C. (Index of Coincidence) and Mutual I.C.
 
 ## Requirements
