@@ -23,11 +23,16 @@ class SubstituteSolver(object):
     def __getFrequencyOfText(self, inputText):
         text = ''.join(inputText.lower().split())
         frequency = {}
+        sum = 0
         for letter in text:
             if letter in frequency:
                 frequency[letter] += 1
+                sum += 1
             else:
                 frequency[letter] = 1
+                sum += 1
+        for key in frequency:
+            frequency[key] = round(frequency[key] / sum * 100, 3)
         return frequency
 
 
@@ -59,6 +64,8 @@ class SubstituteSolver(object):
     def run(self):
         self.cipherfreqs = sorted(self.__getFrequencyOfText(self.ciphertxt).items(), key=lambda x:x[1],reverse=True)
         self.key = self.__keygen()
+        print("[Substition Cipher] Cryptogram: Result of Frequency analysis (Rate(%))")
         print(self.cipherfreqs)
+        print("\n[Substition Cipher] General Text: Result of Frequency analysis (Rate(%))")
         print(self.letterfreqs)
         return self.key, self.__decrypt(self.key)

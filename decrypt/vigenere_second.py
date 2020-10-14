@@ -15,7 +15,7 @@ class VigenereProcessor(object):
             letter = letter.lower()
 
             if letter.isalpha():
-                shiftPos = constants.alphabet.index(letter) + self.offsetDict[index % keyLength]
+                shiftPos = constants.alphabet.index(letter) - self.offsetDict[index % keyLength]
                 new_pos = constants.alphabet[shiftPos % 26]
                 newMessage += new_pos
 

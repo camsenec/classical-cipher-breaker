@@ -90,12 +90,23 @@ class VigenereSolver(object):
             else:
                 sequenceDictionary[sequenceNumber] = self.ciphertxt[index]
 
+        #log
+        print("\n\n[Vigenere Cipher] Partial Texts")
+        for key in sequenceDictionary.keys():
+            print("Y", key+1, ":", sequenceDictionary[key], '\nI.C.:', round(self.__calculateIC(sequenceDictionary[key]),3), '\n')
+
         #iterate through both sequence
         for indexI in sequenceDictionary.keys():
             for indexJ in sequenceDictionary.keys():
                 for g in range(len(constants.alphabet)):
                     mutualIC = self.__calculateMuturalIC(sequenceDictionary[indexI], shift.ShiftSolver(sequenceDictionary[indexJ], g).run())
-                    candidatePairList.append([indexI+1, indexJ+1, g, mutualIC])
+                    if(indexI < indexJ):
+                        candidatePairList.append([indexI+1, indexJ+1, g, mutualIC])
+
+        #log
+        print("\n\n[Vigenere Cipher] Mutual IC")
+        for pair in candidatePairList:
+            print("Y" + str(pair[0]) + ", Y" + str(pair[1]) + ", g =", str(pair[2]) + ", Mutual I.C. =", pair[3])
 
         epsilon = 0.0005
         pairOfShiftKeys = []
@@ -110,7 +121,6 @@ class VigenereSolver(object):
 
             epsilon += 0.0005
 
-        print(pairOfShiftKeys)
         return pairOfShiftKeys
 
     def __decrypt(self):

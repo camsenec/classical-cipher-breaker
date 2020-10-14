@@ -1,4 +1,5 @@
 from decrypt import vigenere_second
+from decrypt import constants
 
 import csv
 import sys
@@ -19,4 +20,7 @@ if __name__ == "__main__":
             offsetDict = {}
             for key in differenceDict:
                 offsetDict[key] = (differenceDict[key] + offset) % 26
-            f.write(str(offset) + ' : ' + vigenere_second.VigenereProcessor(message, offsetDict).run() + '\n\n')
+            encryptionKey = []
+            for key in offsetDict:
+                encryptionKey.append(constants.alphabet[offsetDict[key]])
+            f.write(str(encryptionKey) + ' : ' + vigenere_second.VigenereProcessor(message, offsetDict).run() + '\n\n')
