@@ -44,7 +44,7 @@ Shift
 :
 ```
 
-Second, if the message you inputted is encrypted by substitution cipher, you might get a meaningful text.
+Second, if the message you have is encrypted by substitution cipher, you might get a meaningful text.
 ```
 Substitute
 -----------------------------------------------------------
