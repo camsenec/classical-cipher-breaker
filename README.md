@@ -13,7 +13,7 @@ Here, you need not construct virtual environment. For execution, remove `pipenv 
 ####  1. Clone this repository
 ```bash
 $ git clone https://github.com/thanatoth/classical-cipher-breaker.git
-$ cd classical-cipher-breake
+$ cd classical-cipher-breaker
 ```
 
 #### 2. Construct virtual environment
