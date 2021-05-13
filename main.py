@@ -10,19 +10,27 @@ if __name__=='__main__':
 
     with open('output/result.txt', mode='w') as f:
         #Shift
+        print("Shift Cipher Decryption")
         f.write('Shift\n')
         f.write('-----------------------------------------------------------\n')
         for offset in range(len(constants.alphabet)):
             f.write(str(offset) + ' : ' + shift.ShiftSolver(message, offset).run() + '\n\n')
+        print("Shift Cipher Decryption Completed")
+        print("Check output/results.txt\n")
 
         #Substitute
+        print("Substitute Cipher Decryption")
         f.write('\nSubstitute\n')
         f.write('-----------------------------------------------------------\n')
         substitute_key, shifted_by_substitute = substitute.SubstituteSolver(message).run()
         f.write('Keys : ' + str(substitute_key) + '\n')
         f.write(str(shifted_by_substitute) + '\n')
+        print("Substitute Cipher Decryption Completed")
+        print("Check output/results.txt")
+
 
         #Vigenere
+        print("Vigenere Cipher Decryption")
         f.write('\nVigenere\n')
         f.write('-----------------------------------------------------------\n')
         m, pairOfShiftKeys = vigenere.VigenereSolver(message).run()
