@@ -3,7 +3,7 @@ This cipher breaker tries to decrypt cryptogram encrypted by classical way, name
 In decryption of message encrypted by vigenere cipher, we use I.C. (Index of Coincidence) and Mutual I.C.
 
 ## Requirements
-- Python 3.7
+- Python 3.*
 
 
 ## Usage
