@@ -7,12 +7,9 @@ In decryption of message encrypted by vigenere cipher, we use I.C. (Index of Coi
 
 
 ## Usage
-Note : You can also excecute this program at https://repl.it/@thanatoth/classical-cipher-breaker. Please fork the project and use it (If you does not have an account of repl.it please create your account). 
-Here, you need not construct virtual environment. For execution, remove `pipenv run` from any instructions shown below. For example, if you want to run main.py, what you have to do is excecute `python main.py` at the terminal shown on the left side of this page. 
-
 ####  1. Clone this repository
 ```bash
-$ git clone https://github.com/thanatoth/classical-cipher-breaker.git
+$ git clone https://github.com/camsenec/classical-cipher-breaker.git
 $ cd classical-cipher-breaker
 ```
 
